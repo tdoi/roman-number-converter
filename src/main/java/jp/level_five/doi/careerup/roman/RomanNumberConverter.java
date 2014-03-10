@@ -7,8 +7,10 @@ public class RomanNumberConverter {
 			return 1;
 		} else if ("V".equals(value)) {
 			return 5;
-		} else {
+		} else if ("X".equals(value)) {
 			return 10;
+		} else {
+			return 50;
 		}
 	}
 	
