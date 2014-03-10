@@ -36,4 +36,19 @@ public class RomanNumberConverterTest {
 	public void testSingleCShouldBeInterpretedAs100() {		
 		assertEquals(100, romanNumberConverter.convert("C"));		
 	}
+	
+	@Test
+	public void testSingleDShouldBeInterpretedAs500() {
+		assertEquals(500, romanNumberConverter.convert("D"));
+	}
+
+	@Test
+	public void testSingleMShouldBeInterpretedAs1000() {
+		assertEquals(1000, romanNumberConverter.convert("M"));
+	}
+	
+	@Test
+	public void testSingleSmallIShouldBeInterpretedAs1() {
+		assertEquals(1, romanNumberConverter.convert("i"));		
+	}
 }
