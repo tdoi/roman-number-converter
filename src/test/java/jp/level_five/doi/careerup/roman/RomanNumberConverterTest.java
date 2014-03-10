@@ -32,4 +32,8 @@ public class RomanNumberConverterTest {
 		assertEquals(50, romanNumberConverter.convert("L"));		
 	}
 
+	@Test
+	public void testSingleCShouldBeInterpretedAs100() {		
+		assertEquals(100, romanNumberConverter.convert("C"));		
+	}
 }

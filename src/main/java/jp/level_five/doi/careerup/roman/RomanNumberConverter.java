@@ -9,8 +9,10 @@ public class RomanNumberConverter {
 			return 5;
 		} else if ("X".equals(value)) {
 			return 10;
-		} else {
+		} else if ("L".equals(value)) {
 			return 50;
+		} else {
+			return 100;
 		}
 	}
 	
