@@ -27,5 +27,9 @@ public class RomanNumberConverterTest {
 		assertEquals(10, romanNumberConverter.convert("X"));		
 	}
 	
+	@Test
+	public void testSingleLShouldBeInterpretedAs50() {		
+		assertEquals(50, romanNumberConverter.convert("L"));		
+	}
 
 }
